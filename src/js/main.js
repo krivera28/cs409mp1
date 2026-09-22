@@ -17,7 +17,7 @@ function scrollFunction(){
     for(const section of sections){
         const sectionTop = section.getBoundingClientRect().top;
 
-        if(sectionTop <= (navbarBottom + 10)){
+        if(sectionTop <= (navbarBottom + 20)){
             currentSection = section;
         }
     }
