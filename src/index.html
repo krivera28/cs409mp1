@@ -4,10 +4,127 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Kay Rivera MP1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <nav id="navbar">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#experience" class="nav-item">Experience</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#skills" class="nav-item">Skills</a>
+        </nav>
+        <header>
+            <section id="home">
+                <h1>Hi, I'm Kay Rivera!</h1>
+            </section>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <h4>I'm a Computer Science student at the University of Illinois Urbana-Champaign passionate about building technology that improves how people interact with the world around them and increasing diversity in the field. My experience spans various CS fields, but I'm particularly interested in opportunities in product management, frontend engineering, project management, UI/UX design, and human-computer interaction. Feel free to reach out to chat and learn more about me from my LinkedIn or by emailing me at kaykayr2882@gmail.com!</h4>
+                <video controls>
+                    <source src="/assets/watervid.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="experience">
+                <h2>Work Experience</h2>
+
+                <div class="experience-container">
+                    <div class="experience">
+                        <h3>University of Illinois Urbana-Champaign</h3>
+                        <h4>Course Assistant - CS 415: Game Development</h4>
+                        <button id="uiuc-button">View Details</button>
+                    </div>
+                    <div id="uiuc-modal" class="modal">
+                        <div class="modal-content">
+                            <h3>University of Illinois Urbana-Champaign</h3>
+                            <h4>Course Assistant - CS 415: Game Development</h4>
+                            <p>August 2026 - Present</p>
+                            <p>As a Course Assistant for CS 415: Game Development, I support hundreds of students developing games in Unreal Engine by hosting office hours and troubleshooting technical, gameplay, and design challenges. I evaluate student projects and provide actionable feedback on technical implementation, gameplay functionality, and design. I also develop exam questions and collaborate with other course staff to identify student learning gaps, address recurring development challenges, and align grading standards.</p>
+                            <button id="uiuc-close">Close</button>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3>Goldman Sachs</h3>
+                        <h4>Summer Analyst - Controllers Software Engineering Intern</h4>
+                        <button id="goldman-button">View Details</button>
+                    </div>
+                    <div id="goldman-modal" class="modal">
+                    <div class="modal-content">
+                            <h3>Goldman Sachs — New York, NY</h3>
+                            <h4>Summer Analyst - Controllers Software Engineering Intern</h4>
+                            <p>June 2026 - August 2026</p>
+                            <p>As a Software Engineering Summer Analyst on the Controllers team at Goldman Sachs, I implemented a Kafka-based producer-consumer pipeline in Java that consolidated hundreds of financial exception processing jobs into a few batch operations, reducing alert volume from hundreds to single digits during downstream service outages. I also automated the quarterly regulatory fund scoping process using AI to identify in-scope investment funds across multiple data sources and consolidate separate manual processes into a single workflow, increasing reporting efficiency and accuracy. Additionally, I coordinated Kafka provisioning and security approvals with cross-functional teams to unblock critical CI/CD deployments.</p>
+                            <button id="goldman-close">Close</button>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3>Girls Who Code</h3>
+                        <h4>Lead Teaching Assistant</h4>
+                        <button id="gwc-button">View Details</button>
+                    </div>
+                    <div id="gwc-modal" class="modal">
+                    <div class="modal-content">
+                        <h3>Girls Who Code - Remote</h3>
+                        <h4>Lead Teaching Assistant</h4>
+                        <p>June 2025 - Aug 2025 & May 2024 - Aug 2024</p>
+                        <p>As a Lead Teaching Assistant for Girls Who Code, I taught interactive daily lessons using JavaScript's p5.js library on programming fundamentals and game development principles to more than 300 high school students. I continuously evolved the curriculum to better match student needs, contributing to a 94% project completion rate. Beyond instruction, I mentored students through check-ins, feedback sessions, and collaborative activities designed to improve retention, confidence, and engagement with computer science!</p>
+                        <button id="gwc-close">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                    <div class="carousel">
+                    <button id="previous">←</button>
+                    <div class="slide">
+                        <h3>Recipe Sorter</h3>
+                        <h4>HTML, CSS, and JavaScript</h4>
+                        <p>- Built a data-driven recipe management platform to simplify organization and discovery through real-time search and filtering</p>
+                        <p>- Implemented dynamic filtering and sorting features based on user feedback to improve usability and personalization</p>
+                        <p>- Automated data synchronization using Google Apps Script, eliminating manual updates and reducing maintenance overhead</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Gamify</h3>
+                        <h4>Java, HTML, CSS, TypeScript, Node.js, and Vue.js</h4>
+                        <p>- Designed and developed a productivity web app that gamifies daily task management, encouraging long-term engagement</p>
+                        <p>- Created a dynamic progress tracking system that visualizes user achievements through real-time data updates and rewards</p>
+                        <p>- Managed project milestones, task delegation, and feature integration to deliver a cohesive user experience</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Whisper From the Forest</h3>
+                        <h4>Unreal Engine Blueprints</h4>
+                        <p>- Designed gameplay systems and level progression, balancing exploration, pacing, and difficulty to improve player engagement</p>
+                        <p>- Conducted playtesting sessions and incorporated player feedback to iterate on mechanics, usability, and overall experience</p>
+                    </div>
+                    <button id="next">→</button>
+                </div>
+            </section>
+            <section id="skills">
+    <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="column">
+                <h3>Programming Languages & Libraries</h3>
+                <p>C/C++, Java, Python, HTML/CSS, JavaScript, p5.js, Numpy, Pandas, SciPy</p>
+            </div>
+            <div class="column">
+                <h3>Tools</h3>
+                <p>Git/GitHub, Jira, Confluence, VS Code, IntelliJ, Docker, Notion, Canva, Figma, Unreal Engine, Unity, Devin, Excel, LaTex</p>
+            </div>
+            <div class="column">
+                <h3>Technical Interests</h3>
+                <p>Product Management, Project Management, Frontend Development, UI/UX Design, Human-Computer Interaction (HCI), Game Development, Website Development, Software Engineering</p>
+            </div>
+        </div>
+    </section>
+        </main>
+        <footer>
+            <a href="mailto:kaykayr2882@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/krivera28"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kaylani-rivera"><i class="fa-brands fa-linkedin"></i></a>
+        </footer>
     </body>
 </html>
